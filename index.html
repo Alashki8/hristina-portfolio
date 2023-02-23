@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HV Portfolio</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../static/img/hrid-removebg-preview.png">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <label for=""></label>
+                <ul class="tab-links">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#learning_outcomes">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">  
+                <h1>P<span class="light-blue">O</span><span class="dark-blue">R</span><span class="light-blue">T</span><span class="dark-blue">F</span><span>O</span><span class="light-blue">L</span><span class="dark-blue">I</span><span>O</span></h1>
+                <p>Hi, I'm <span class="light-blue">Hristina </span><span class="dark-blue">Vasileva</span> </p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_photo"><img src="../static/img/bal.jpg"></div>
+                <div class="about_text">
+                    <h1 class="sub-title about">Ab<span class="light-blue">out </span><span class="dark-blue">Me</span></h1>
+                    <div class="tab-titles">
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                        <div class="tab-links" onclick="opentab('hobies')">Hobies</div>
+                        <div class="tab-links active-link" onclick="opentab('family')">Family</div>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <p>I graduated from Polygraphy and Photography highschool - from 8th grade to 12th grade. I was studying graphic design and also photography. We were learning about Adobe Photoshop, Illustrator and InDesign, also we were learning a little HTML. I was very good at photoshop because before highschool I was learning a lot about it. I graduated with great score in 
+                            </p>
+                            <div class="add">highschool and after that I got accepted in New Bulgarian University. There we were still learning about Photoshop, Illustrator and InDesign but then I decided to go to the Netherlands so I can develop more and to learn more.</div>                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobies">
+                        <ul>
+                            
+                            <p>As hobbies I love skiing and drawing. We go skiing on weekends but not as often as before. Also I'm drawing since I was a child. I had a lot of ideas because of my imagination. I was drawing animation, anime and game characters, dragons and I tried to draw comics too. Big reason for that is my love for anime and manga. I also love photography and take pictures of the nature and portraits.
+                            </p>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="family">
+                        <ul>
+                            <p>I was born on 24th of October, year 2002. I live in Sofia, Bulgaria, so as my parents. I'm an only child in my family and my parents are divorced. Right now I live with my mom and her husband but my dad lives alone. I have a step brother, he's my step dad's son. He also lives in Sofia but we don't see eachother often. Sometimes we go out and have fun, we ride bicycles, we go out with friends and other stuff.
+
+
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="learning_outcomes">
+        <div class="container">
+            <h1 class="sub-title learning">Pr<span class="light-blue">oje</span><span class="dark-blue">cts</span></h1>
+            <div class="learning-list">
+                <a href="../template/object.html"> 
+                    <div class="whiter">
+                        <h2>Sitting Object Project</h2>    
+                    </div>
+                </a>
+            
+                
+                <a href="../template/sleep.html"> 
+                    <div class="greener">
+                        <h2>The Sleep Over Project</h2>    
+                    </div>
+                </a>
+                <a href="../template/school.html"> 
+                    <div class="reder">
+                        <h2>School And Hobbie Projects</h2>    
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_text">HTML&nbsp;&nbsp;&nbsp;&nbsp; CSS&nbsp;&nbsp;&nbsp;&nbsp; JavaScript</div>
+        <div class="socials"> <a href="https://www.instagram.com/_hriskaa_/"><img src="../static/img/icons8-instagram-48 (1).png" alt=""></a><a href="https://www.facebook.com/profile.php?id=100006678196622"><img src="../static/img/icons8-facebook-48 (1).png" alt=""></a></div>
+    </footer>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>

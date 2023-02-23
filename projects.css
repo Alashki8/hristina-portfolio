@@ -1,0 +1,177 @@
+* {margin: 0;padding: 0;font-family: serif;box-sizing: border-box;font-family: 'Philosopher', sans-serif;}
+
+body {background: #880c81;color: #fff}
+
+body::-webkit-scrollbar {display: none;}
+
+html {scroll-behavior: smooth; transition: 1s;}
+
+#header {width: 100%;height: 100vh;}
+
+.container {padding: 10px 10%;}
+
+nav {display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;font-size: 40px; margin-right: 47px;}
+
+nav ul li{display: inline-block;list-style: none; margin-top: 50px; margin-left: 40px;}
+
+nav ul li a {text-decoration: none;font-size: 30px;color: #fff;position: relative; left: 350px; top: -130px;}
+
+nav ul li a::after{content: '';width: 0;height: 3px;background: #361697;position: absolute;left: 0;bottom: -6px;transition: 0.7s;}
+
+nav ul li a:hover{color: #26f4b3;}
+
+nav ul li a:hover::after{width: 100%;}
+
+label {
+    position: relative; font-size: 50px;text-align: center; left: -100px; top: 30px;
+}   
+
+.light-blue { color: #26f4b3;}
+
+.dark-blue { color: #361697;}
+
+#za-da{position: relative; top: -20px;left: 120px;}
+
+.tab-titles {display: flex;margin: 20px 0 40px; position: relative; top: 0px;}
+
+.tab-links { font-size: 45px;margin-right: 50px;font-weight: 500;cursor: pointer;position: relative; left: 1000px; top: -580px}
+
+.tab-links::after{content: '';width: 0;height: 3px;background: #361697;position: absolute;left: 0;bottom: -7px;transition: 0.7s;}
+
+.tab-links.active-link::after{width: 100%;}
+
+.tab-links:hover{color: #26f4b3;}
+
+.row {display: flex;justify-content: space-between;flex-wrap: wrap;}
+
+.tab-contents{display: none; position: relative;}
+
+.tab-contents.active-tab{display: block; top: -450px; left: -1400px;}
+
+.add {font-size: 40px;}
+
+.section_object {position: relative;
+  top: -500px;
+  left: 100px;}
+
+.section_sleep {
+    position: relative;
+    top: -500px;
+    left: 100px;
+}
+
+.process_object {
+  margin-bottom: -550px;
+}
+.process_object img {margin-bottom: 50px;}
+
+.process_object p {position: relative; top: -510px; left: 500px; font-size: 30px; width: 800px; height: 100px;}
+
+.project img{width: 500px; height: 460px;}
+
+.project p {position: relative; top: -470px; left: 600px; font-size: 30px; width: 600px;height: 100px;}
+
+.project {margin-bottom: 100px;}
+
+.process_sleep {margin-bottom: -550px;}
+
+.process_sleep img {margin-bottom: 50px;}
+
+.process_sleep p {position: relative; top: -410px; left: 500px; font-size: 30px; width: 800px; height: 100px;}
+
+.light {border: #26f4b3 6px solid;}
+
+footer{width: 100%; height: 50px; background: linear-gradient(to right,#26f4b3,#361697);}
+
+.footer_text{font-size: 30px; color: #080808;position: relative;left: 30px;top: 5px;}
+
+.socials{position: relative; top: -33px; left: 1435px;}
+
+
+
+.gallery {
+    margin-bottom: -350px;
+    position: relative;
+    left: 1460px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+    height: auto;border: #361697 6px solid;
+  }
+
+.gallery img{padding: 5px; filter: grayscale(100%); transition: 1s;cursor: pointer;margin-right: 30px;margin-bottom: 30px;}
+
+.gallery img:hover{filter: grayscale(0%);transform: scale(1.1);}
+
+.thumbnail {
+    width: 160px;
+    height: 120px;
+    cursor: pointer;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    right:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+  position: relative;
+  width: 630px;
+  height: 590px;
+right: -360px;
+top: -635px;
+background-color: #262626;
+font-size: 30px;
+color: #fff;
+cursor: default;
+}
+    
+  
+  #img01 {
+    width: 750px;
+    height: 600px;
+    position: relative;
+    right: 360px;
+    filter: grayscale(0%);
+    transform: scale(1);
+    top: -40px;
+  }
+
